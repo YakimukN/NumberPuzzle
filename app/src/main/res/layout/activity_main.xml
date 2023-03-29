@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        style="@android:style/Widget.Button"
+        android:background="@drawable/background_btn"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2f3363"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settingsBtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn"
+        android:text="Settings"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="#2f3363"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/statisticBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/statisticBtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn"
+        android:text="Statistic"
+        android:textAllCaps="false"
+        android:textColor="#2f3363"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/helpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        style="@android:style/Widget.Button"
+        android:background="@drawable/background_btn"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2f3363"
+        android:textAllCaps="false"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statisticBtn" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/women"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/imageView"-->
+    <!--                    android:layout_marginTop="-10dp"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:scaleType="fitXY"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    app:layout_constraintTop_toTopOf="parent"-->
+    <!--                    app:srcCompat="@drawable/background_intro" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="64dp"-->
+    <!--                    android:text="Welcome back to \n your app"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:textSize="40sp"-->
+    <!--                    android:layout_marginStart="32dp"-->
+    <!--                    android:layout_marginEnd="32dp"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="@id/imageView"-->
+    <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView2"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="download ...."-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textAlignment="center"-->
+    <!--                    android:layout_marginTop="32dp"-->
+    <!--                    android:textSize="20dp"-->
+    <!--                    app:layout_constraintEnd_toEndOf="@id/textView"-->
+    <!--                    app:layout_constraintStart_toStartOf="@id/textView"-->
+    <!--                    app:layout_constraintTop_toBottomOf="@id/textView"-->
+    <!--                    />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/imageView2"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+    <!--                    app:srcCompat="@drawable/white_line"/>-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/imageView3"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="@id/imageView"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    android:src="@drawable/women"/>-->
+
+    <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--                <androidx.appcompat.widget.AppCompatButton-->
+    <!--                    android:id="@+id/gameBtn"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="New Game"-->
+    <!--                    style="@android:style/Widget.Button"-->
+    <!--                    android:background="@drawable/background_btn"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:textColor="#2f3363"-->
+    <!--                    android:layout_marginStart="32dp"-->
+    <!--                    android:layout_marginEnd="32dp"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    app:layout_constraintBottom_toTopOf="@+id/settingsBtn"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--                <androidx.appcompat.widget.AppCompatButton-->
+    <!--                    android:id="@+id/settingsBtn"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Settings"-->
+    <!--                    style="@android:style/Widget.Button"-->
+    <!--                    android:background="@drawable/background_btn"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:layout_marginStart="32dp"-->
+    <!--                    android:layout_marginEnd="32dp"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:textColor="#2f3363"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                <androidx.appcompat.widget.AppCompatButton-->
+    <!--                    android:id="@+id/helpBtn"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Help"-->
+    <!--                    style="@android:style/Widget.Button"-->
+    <!--                    android:background="@drawable/background_btn"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:textColor="#2f3363"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:layout_marginStart="32dp"-->
+    <!--                    android:layout_marginEnd="32dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    app:layout_constraintTop_toBottomOf="@+id/settingsBtn" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
